@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Leo Moyota Martinez - Software Engineer">
+    <title>Leo Moyota - Professional Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Main Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#Home" class="nav-logo">Ing. Leo Moyota</a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><button id="theme-toggle">Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- 1. Home / Presentation -->
+        <section id="Home" class="hero">
+            <div class="hero-content">
+                <span>Welcome to my portfolio</span>
+                <h1>Hello, I'm <span>Leo Moyota Martinez</span></h1>
+                <h2>Software Engineer</h2>
+                <p>Passionate about bridging the gap between complex algorithms and seamless user experiences. My expertise spans Python-based web development, applied Machine Learning, and Unity game design, always prioritizing clean architecture and functional design.</p>                <div class="hero-buttons">
+                    <a href="#Projects" class="btn-primary">View my projects</a>
+                    <!-- Mantenemos target="_blank" solo en enlaces externos -->
+                    <a href="https://wa.me/+593996762565" target="_blank" rel="noopener noreferrer" class="btn-secondary">Contact me</a>
+                </div>
+            </div>
+            <figure class="hero-image">
+                <img src="img/lm_no_bg.png" alt="Leo Moyota profile picture" class="profile-image">
+                <figcaption class="sr-only">Leo Moyota profile picture</figcaption>
+            </figure>
+        </section>
+
+        <!-- 2. About Me -->
+        <section id="About" class="about">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3>Professional Profile</h3>
+                    <p>I am a Software Engineering student at UNEMI based in Milagro, focused on developing high-value technical and functional solutions. My profile integrates modern web architecture (Frontend and Backend), interactive game development, and applied data science.</p>
+                </article>
+                <aside class="about-highlights">
+                    <h3>Education & Interests</h3>
+                    <ul>
+                        <li> <strong>Education:</strong> Software Engineering (UNEMI)</li>
+                        <li> <strong>Core Focus:</strong> Python, Fullstack Architecture, QA Testing & Machine Learning</li>                       
+                        <li><strong>Goal:</strong> Design and build accessible, scalable, and maintainable software.</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- 3. Technical Skills -->
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-showcase">
+                <div class="skill-box">
+                    <img src="img/python.png" alt="Python logo" class="skill-icon">
+                    <span>Python</span>
+                </div>
+                <div class="skill-box">
+                    <img src="img/javascript.png" alt="JavaScript logo" class="skill-icon">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-box">
+                    <!-- Agrupador para mantener HTML y CSS horizontales -->
+                    <div class="skill-icons-group">
+                        <img src="img/html.png" alt="HTML logo" class="skill-icon">
+                        <img src="img/css.png" alt="CSS logo" class="skill-icon">
+                    </div>
+                    <span>HTML & CSS</span>
+                </div>
+                <div class="skill-box">
+                    <img src="img/postgres.png" alt="PostgreSQL logo" class="skill-icon">
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="skill-box">
+                    <img src="img/django.png" alt="Django logo" class="skill-icon">
+                    <span>Django</span>
+                </div>
+                 <div class="skill-box">
+                    <img src="img/github.png" alt="Git logo" class="skill-icon">
+                    <span>Github</span>
+                </div>
+                <div class="skill-box">
+                    <img src="img/git.png" alt="Git logo" class="skill-icon">
+                    <span>Git Source Control</span>
+                </div>
+            </div>
+        </section>
+        <!-- 4. Featured Projects -->
+        <section id="Projects" class="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-filters">
+                <button class="btn-filter active" data-filter="all">All</button>
+                <button class="btn-filter" data-filter="web">Web</button>
+                <button class="btn-filter" data-filter="ml">Machine Learning</button>
+                <button class="btn-filter" data-filter="game">Games</button>
+            </div>
+            <div class="projects-grid">
+                <!-- PROJECT 1: GUIOS PRO-MAX -->
+                <article class="project-card" data-category="web">
+                    <figure class="project-image-container">
+                <img src="img/guioss.png" alt="Groq AI logo" class="project-icon">
+
+                        <!-- img de portada de GUIOS PRO-MAX -->
+                    </figure>
+                    <div class="project-content">
+                        
+                        <h3>GUIOS PRO-MAX </h3>
+                        <p><strong>Problema resuelto:</strong> Automatiza y evalúa la viabilidad de adopción de software Open Source (FLOSS) en organizaciones basándose en la metodología GUIOSAD.</p>
+                        <p>Sistema web con autenticación institucional, flujos de auditoría validados y un motor de IA integrado (Groq) que sugiere la importancia de los factores evaluativos según el contexto del sector. Incluye un dashboard de gestión y exportación de índices de viabilidad a PDF.</p>
+                        <div class="badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">Django</span>
+                            <span class="badge">Groq AI</span>
+                            <span class="badge">ReportLab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Leomoyotam/GuiossProMax.git" target="_blank" rel="noopener noreferrer" class="btn-secondary">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: Placeholder -->
+                <article class="project-card" data-category="web">
+                    <figure class="project-image-container" style="background-color: var(--color-surface); display: flex; align-items: center; justify-content: center; height: 210px;">
+                        <img src="img/sistema_inventario.png" alt="Sistema de inventario" class="project-icon">
+                    </figure>
+                    <div class="project-content">
+                        <h3>Sistema web de gestión de productos, usuarios, insistencias y entregas </h3>
+                        <p><strong>Problema resuelto:</strong> Permite mantener registro y trazabilidad de productos, revisar existencias y conocer el estado de las entregas.</p>
+                        <div class="badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">Django</span>
+                            <span class="badge">SQLite</span>
+                            <span class="badge">HTML/CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jguadalupec-netizen/inventario.git" target="_blank" rel="noopener noreferrer" class="btn-secondary">Repositorio</a>
+                        </div>               
+                         </div>
+                </article>
+
+                <!-- PROJECT 3: Placeholder -->
+                <article class="project-card" data-category="web">
+                    <figure class="project-image-container" style="background-color: var(--color-surface); display: flex; align-items: center; justify-content: center; height: 210px;">
+                    <img src="img/clasificador.png" alt="Clasificador de incidencias" class="project-icon">
+                    </figure>
+                    <div class="project-content">
+                        <h3>Clasificador de incidencias en paneles solares</h3>
+                        <p><strong>Problema resuelto:</strong> Clasificar y detectar incidencias en paneles solares de manera automática.</p>
+                            <div class="badges">
+                            <span class="badge">Próximamente</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jguadalupec-netizen/inventario.git" target="_blank" rel="noopener noreferrer" class="btn-secondary">Repositorio</a>
+                        </div>         
+                        </div>
+                </article>
+            </div>
+        </section>
+
+<!-- 6. Design System / Componentes -->
+        <section id="design-system" class="design-system-section">
+            <div class="ds-header">
+                <h2>Design System</h2>
+            </div>
+            
+            <div class="ds-carousel-wrapper">
+                <!-- Botón Izquierdo -->
+                <button id="ds-prev" class="ds-arrow side-arrow" aria-label="Previous">&larr;</button>
+                
+                <div class="ds-carousel-container">
+                    <div class="ds-track" id="ds-track">
+                        <!-- Slide 1: Colores -->
+                        <article class="ds-slide">
+                            <h3>Colors</h3>
+                            <div class="ds-color-grid">
+                                <div class="ds-color" style="background: var(--color-primary);"><span>Primary</span></div>
+                                <div class="ds-color" style="background: var(--color-secondary);"><span>Secondary</span></div>
+                                <div class="ds-color" style="background: var(--color-background); border: 1px solid var(--color-border); color: var(--color-text);"><span>Background</span></div>
+                                <div class="ds-color" style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text);"><span>Surface</span></div>
+                                <div class="ds-color" style="background: var(--color-text); color: var(--color-background);"><span>Text</span></div>
+                            </div>
+                        </article>
+
+                        <!-- Slide 2: Tipografía -->
+                        <article class="ds-slide">
+                            <h3>Typography</h3>
+                            <div class="ds-typo">
+                                <h1>Heading H1</h1>
+                                <h2>Heading H2</h2>
+                                <h3>Heading H3</h3>
+                                <p>Paragraph: Base text optimized for readability.</p>
+                                <p class="text-muted">Muted text: For secondary descriptions.</p>
+                                <a href="#design-system">Interactive Link</a>
+                            </div>
+                        </article>
+
+                        <!-- Slide 3: Espaciado -->
+                        <article class="ds-slide">
+                            <h3>Spacing Scale</h3>
+                            <div class="ds-spacing">
+                                <div class="space-item"><div class="space-box" style="width: var(--space-sm);"></div> <span>sm (0.5rem)</span></div>
+                                <div class="space-item"><div class="space-box" style="width: var(--space-md);"></div> <span>md (1rem)</span></div>
+                                <div class="space-item"><div class="space-box" style="width: var(--space-lg);"></div> <span>lg (2rem)</span></div>
+                                <div class="space-item"><div class="space-box" style="width: var(--space-xl);"></div> <span>xl (4rem)</span></div>
+                            </div>
+                        </article>
+
+                        <!-- Slide 4: Componentes Reutilizables -->
+                        <article class="ds-slide">
+                            <h3>Components</h3>
+                            <div class="ds-components">
+                                <div class="ds-comp-row">
+                                    <button class="btn-primary">Primary Button</button>
+                                    <button class="btn-secondary">Secondary Btn</button>
+                                </div>
+                                <div class="ds-comp-row">
+                                    <span class="badge">Skill Badge</span>
+                                    <span class="badge" style="background-color: var(--color-secondary); color: #fff;">Variant</span>
+                                </div>
+                                <div class="ds-comp-row">
+                                    <input type="text" placeholder="Form Input Example" disabled style="width:100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-background); color: var(--color-text);">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Botón Derecho -->
+                <button id="ds-next" class="ds-arrow side-arrow" aria-label="Next">&rarr;</button>
+            </div>
+        </section>        <!-- 5. Contact -->
+        <section id="Contact" class="contact-section-dark">
+            <div class="contact-header">
+                <h2>Contact Me</h2>
+            </div>
+            
+            <div class="contact-boxes">
+                <!-- Box 1: Email (Ejemplo) -->
+                <a href="mailto:lmoyotam@unemi.edu.ec" class="contact-box">
+                    <!-- img/svg icono email -->
+                    <span>lmoyotam@unemi.edu.ec</span>
+                </a>
+
+                <!-- Box 2: WhatsApp -->
+                <a href="https://wa.me/+593996762565" target="_blank" rel="noopener noreferrer" class="contact-box">
+                    <!-- img/svg icono telefono/whatsapp -->
+                    <span>+593 99 676 2565</span>
+                </a>
+                
+                 <a href="https://www.linkedin.com/in/leo-moyota-martinez-40b412340/" target="_blank" rel="noopener noreferrer" class="contact-box">
+                <span>LinkedIn Profile</span>
+                </a>
+
+                <!-- Box 3: Location -->
+                <div class="contact-box">
+                    <!-- img/svg icono ubicacion -->
+                    <span>Milagro, Ecuador</span>
+                </div>
+            </div>
+
+            <div class="contact-footer">
+                <div class="social-icons">
+                    <a href="https://github.com/Leomoyotam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <!-- img/svg icono github -->
+                        <span>GitHub</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/leo-moyota-martinez-40b412340/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <!-- img/svg icono linkedin -->
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Leo Moyota Martinez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button id="btn-top" class="btn-top" aria-label="Back to top">↑</button>
+
+    <!-- Conexión del script al final del body -->
+    <script src="js/script.js" defer></script>
+</body>
+</html> 
