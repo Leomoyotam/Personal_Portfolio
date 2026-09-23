@@ -797,3 +797,14 @@ p { margin-bottom: var(--space-md); color: var(--color-text-muted); }
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.contact-icon {
+width: 40px;
+height: 40px;
+}
+
+.contact-icon-linkedin {
+width: 60px;
+height: 50px;
+align-items: center;
+}
