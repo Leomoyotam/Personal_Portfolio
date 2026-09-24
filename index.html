@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Portfolio of Leo Moyota Martinez - Software Engineer">
-    <title>Leo Moyota - Professional Portfolio</title>
+    <meta name="description" content="Portafolio Profesional de Leo Moyota Martinez - Ingeniero de Software">
+    <title>Leo Moyota - Portafolio Profesional</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,15 +15,15 @@
         <nav class="navbar">
             <a href="#Home" class="nav-logo">Leo Moyota</a>
             
-            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
             
             <ul class="nav-links" id="nav-links">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><button id="theme-toggle">Theme</button></li>
+                <li><a href="#Home">Inicio</a></li>
+                <li><a href="#About">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#Projects">Proyectos</a></li>
+                <li><a href="#Contact">Contacto</a></li>
+                <li><button id="theme-toggle">Tema</button></li>
             </ul>
         </nav>
     </header>
@@ -33,35 +33,36 @@
         <!-- 1. Home / Presentation -->
         <section id="Home" class="hero">
             <div class="hero-content">
-                <span>Welcome to my portfolio</span>
-                <h1>Hello, I'm <span>Leo Moyota Martinez</span></h1>
-                <h2>Software Engineer</h2>
-                <p>Passionate about bridging the gap between complex algorithms and seamless user experiences. My expertise spans Python-based web development, applied Machine Learning, and Unity game design, always prioritizing clean architecture and functional design.</p>                <div class="hero-buttons">
-                    <a href="#Projects" class="btn-primary">View my projects</a>
+                <span>Bienvenido a mi portafolio</span>
+                <h1>Hola, soy <span>Leo Moyota Martinez</span></h1>
+                <h2>Ingeniero de Software</h2>
+                <p>Especializado en desarrollo backend con Python/Django, integración de modelos de Machine Learning y desarrollo de aplicaciones web mantenibles y de alto rendimiento.</p>                
+                <div class="hero-buttons">
+                    <a href="#Projects" class="btn-primary">Ver mis proyectos</a>
                     <!-- Mantenemos target="_blank" solo en enlaces externos -->
-                    <a href="https://wa.me/+593996762565" target="_blank" rel="noopener noreferrer" class="btn-secondary">Contact me</a>
+                    <a href="https://wa.me/+593996762565" target="_blank" rel="noopener noreferrer" class="btn-secondary">Contáctame</a>
                 </div>
             </div>
             <figure class="hero-image">
-                <img src="img/lm_no_bg.png" alt="Leo Moyota profile picture" class="profile-image">
-                <figcaption class="sr-only">Leo Moyota profile picture</figcaption>
+                <img src="img/lm_no_bg.png" alt="Foto de perfil de Leo Moyota" class="profile-image">
+                <figcaption class="sr-only">Foto de perfil de Leo Moyota</figcaption>
             </figure>
         </section>
 
         <!-- 2. About Me -->
         <section id="About" class="about">
-            <h2>About Me</h2>
+            <h2>Sobre Mí</h2>
             <div class="about-grid">
                 <article class="about-card">
-                    <h3>Professional Profile</h3>
-                    <p>I am a Software Engineering student at UNEMI based in Milagro, focused on developing high-value technical and functional solutions. My profile integrates modern web architecture (Frontend and Backend), interactive game development, and applied data science.</p>
+                    <h3>Perfil Profesional</h3>
+                    <p>Soy estudiante de Ingeniería de Software en UNEMI radicado en Milagro, enfocado en desarrollar soluciones técnicas y funcionales de alto valor. Mi perfil integra arquitectura web moderna (Frontend y Backend), desarrollo de juegos interactivos y ciencia de datos aplicada.</p>
                 </article>
                 <aside class="about-highlights">
-                    <h3>Education & Interests</h3>
+                    <h3>Educación e Intereses</h3>
                     <ul>
-                        <li> <strong>Education:</strong> Software Engineering (UNEMI)</li>
-                        <li> <strong>Core Focus:</strong> Python, Fullstack Architecture, QA Testing & Machine Learning</li>                       
-                        <li><strong>Goal:</strong> Design and build accessible, scalable, and maintainable software.</li>
+                        <li> <strong>Educación:</strong> Ingeniería de Software (UNEMI)</li>
+                        <li> <strong>Enfoque Principal:</strong> Python, Arquitectura Fullstack, Pruebas QA y Aprendizaje Automático</li>                       
+                        <li><strong>Objetivo:</strong> Diseñar y construir software accesible, escalable y mantenible.</li>
                     </ul>
                 </aside>
             </div>
@@ -69,7 +70,7 @@
 
         <!-- 3. Technical Skills -->
         <section id="skills" class="skills-section">
-            <h2>My Skills</h2>
+            <h2>Mis Habilidades</h2>
             <div class="skills-showcase">
                 <div class="skill-box">
                     <img src="img/python.png" alt="Python logo" class="skill-icon">
@@ -101,31 +102,30 @@
                 </div>
                 <div class="skill-box">
                     <img src="img/git.png" alt="Git logo" class="skill-icon">
-                    <span>Git Source Control</span>
+                    <span>Control de Versiones Git</span>
                 </div>
             </div>
         </section>
+        
         <!-- 4. Featured Projects -->
         <section id="Projects" class="projects">
-            <h2>Featured Projects</h2>
+            <h2>Proyectos Destacados</h2>
             
             <div class="project-filters">
-                <button class="btn-filter active" data-filter="all">All</button>
+                <button class="btn-filter active" data-filter="all">Todos</button>
                 <button class="btn-filter" data-filter="web">Web</button>
-                <button class="btn-filter" data-filter="ml">Machine Learning</button>
-                <button class="btn-filter" data-filter="game">Games</button>
+                <button class="btn-filter" data-filter="ml">Aprendizaje Automático</button>
+                <button class="btn-filter" data-filter="game">Juegos</button>
             </div>
             <div class="projects-grid">
                 <!-- PROJECT 1: GUIOS PRO-MAX -->
                 <article class="project-card" data-category="web">
                     <figure class="project-image-container">
-                <img src="img/guioss.png" alt="Groq AI logo" class="project-icon">
-
+                        <img src="img/guioss.png" alt="Groq AI logo" class="project-icon">
                         <!-- img de portada de GUIOS PRO-MAX -->
                     </figure>
                     <div class="project-content">
-                        
-                        <h3>GUIOS PRO-MAX </h3>
+                        <h3>GUIOS PRO-MAX</h3>
                         <p><strong>Problema resuelto:</strong> Automatiza y evalúa la viabilidad de adopción de software Open Source (FLOSS) en organizaciones basándose en la metodología GUIOSAD.</p>
                         <p>Sistema web con autenticación institucional, flujos de auditoría validados y un motor de IA integrado (Groq) que sugiere la importancia de los factores evaluativos según el contexto del sector. Incluye un dashboard de gestión y exportación de índices de viabilidad a PDF.</p>
                         <div class="badges">
@@ -146,7 +146,7 @@
                         <img src="img/sistema_inventario.png" alt="Sistema de inventario" class="project-icon">
                     </figure>
                     <div class="project-content">
-                        <h3>Sistema web de gestión de productos, usuarios, insistencias y entregas </h3>
+                        <h3>Sistema web de gestión de productos, usuarios, insistencias y entregas</h3>
                         <p><strong>Problema resuelto:</strong> Permite mantener registro y trazabilidad de productos, revisar existencias y conocer el estado de las entregas.</p>
                         <div class="badges">
                             <span class="badge">Python</span>
@@ -158,68 +158,68 @@
                         <div class="project-links">
                             <a href="https://github.com/jguadalupec-netizen/inventario.git" target="_blank" rel="noopener noreferrer" class="btn-secondary">Repositorio</a>
                         </div>               
-                         </div>
+                    </div>
                 </article>
 
                 <!-- PROJECT 3: Placeholder -->
                 <article class="project-card" data-category="web">
                     <figure class="project-image-container" style="background-color: var(--color-surface); display: flex; align-items: center; justify-content: center; height: 210px;">
-                    <img src="img/clasificador.png" alt="Clasificador de incidencias" class="project-icon">
+                        <img src="img/clasificador.png" alt="Clasificador de incidencias" class="project-icon">
                     </figure>
                     <div class="project-content">
                         <h3>Clasificador de incidencias en paneles solares</h3>
                         <p><strong>Problema resuelto:</strong> Clasificar y detectar incidencias en paneles solares de manera automática.</p>
-                            <div class="badges">
+                        <div class="badges">
                             <span class="badge">Próximamente</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/jguadalupec-netizen/inventario.git" target="_blank" rel="noopener noreferrer" class="btn-secondary">Repositorio</a>
                         </div>         
-                        </div>
+                    </div>
                 </article>
             </div>
         </section>
 
-<!-- 6. Design System / Componentes -->
+        <!-- 6. Design System / Componentes -->
         <section id="design-system" class="design-system-section">
             <div class="ds-header">
-                <h2>Design System</h2>
+                <h2>Sistema de Diseño</h2>
             </div>
             
             <div class="ds-carousel-wrapper">
                 <!-- Botón Izquierdo -->
-                <button id="ds-prev" class="ds-arrow side-arrow" aria-label="Previous">&larr;</button>
+                <button id="ds-prev" class="ds-arrow side-arrow" aria-label="Anterior">&larr;</button>
                 
                 <div class="ds-carousel-container">
                     <div class="ds-track" id="ds-track">
                         <!-- Slide 1: Colores -->
                         <article class="ds-slide">
-                            <h3>Colors</h3>
+                            <h3>Colores</h3>
                             <div class="ds-color-grid">
-                                <div class="ds-color" style="background: var(--color-primary);"><span>Primary</span></div>
-                                <div class="ds-color" style="background: var(--color-secondary);"><span>Secondary</span></div>
-                                <div class="ds-color" style="background: var(--color-background); border: 1px solid var(--color-border); color: var(--color-text);"><span>Background</span></div>
-                                <div class="ds-color" style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text);"><span>Surface</span></div>
-                                <div class="ds-color" style="background: var(--color-text); color: var(--color-background);"><span>Text</span></div>
+                                <div class="ds-color" style="background: var(--color-primary);"><span>Primario</span></div>
+                                <div class="ds-color" style="background: var(--color-secondary);"><span>Secundario</span></div>
+                                <div class="ds-color" style="background: var(--color-background); border: 1px solid var(--color-border); color: var(--color-text);"><span>Fondo</span></div>
+                                <div class="ds-color" style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text);"><span>Superficie</span></div>
+                                <div class="ds-color" style="background: var(--color-text); color: var(--color-background);"><span>Texto</span></div>
                             </div>
                         </article>
 
                         <!-- Slide 2: Tipografía -->
                         <article class="ds-slide">
-                            <h3>Typography</h3>
+                            <h3>Tipografía</h3>
                             <div class="ds-typo">
-                                <h1>Heading H1</h1>
-                                <h2>Heading H2</h2>
-                                <h3>Heading H3</h3>
-                                <p>Paragraph: Base text optimized for readability.</p>
-                                <p class="text-muted">Muted text: For secondary descriptions.</p>
-                                <a href="#design-system">Interactive Link</a>
+                                <h1>Encabezado H1</h1>
+                                <h2>Encabezado H2</h2>
+                                <h3>Encabezado H3</h3>
+                                <p>Párrafo: Texto base optimizado para legibilidad.</p>
+                                <p class="text-muted">Texto atenuado: Para descripciones secundarias.</p>
+                                <a href="#design-system">Enlace Interactivo</a>
                             </div>
                         </article>
 
                         <!-- Slide 3: Espaciado -->
                         <article class="ds-slide">
-                            <h3>Spacing Scale</h3>
+                            <h3>Escala de Espaciado</h3>
                             <div class="ds-spacing">
                                 <div class="space-item"><div class="space-box" style="width: var(--space-sm);"></div> <span>sm (0.5rem)</span></div>
                                 <div class="space-item"><div class="space-box" style="width: var(--space-md);"></div> <span>md (1rem)</span></div>
@@ -230,18 +230,18 @@
 
                         <!-- Slide 4: Componentes Reutilizables -->
                         <article class="ds-slide">
-                            <h3>Components</h3>
+                            <h3>Componentes</h3>
                             <div class="ds-components">
                                 <div class="ds-comp-row">
-                                    <button class="btn-primary">Primary Button</button>
-                                    <button class="btn-secondary">Secondary Btn</button>
+                                    <button class="btn-primary">Botón Primario</button>
+                                    <button class="btn-secondary">Btn Secundario</button>
                                 </div>
                                 <div class="ds-comp-row">
-                                    <span class="badge">Skill Badge</span>
-                                    <span class="badge" style="background-color: var(--color-secondary); color: #fff;">Variant</span>
+                                    <span class="badge">Insignia de Habilidad</span>
+                                    <span class="badge" style="background-color: var(--color-secondary); color: #fff;">Variante</span>
                                 </div>
                                 <div class="ds-comp-row">
-                                    <input type="text" placeholder="Form Input Example" disabled style="width:100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-background); color: var(--color-text);">
+                                    <input type="text" placeholder="Ejemplo de Entrada de Formulario" disabled style="width:100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-background); color: var(--color-text);">
                                 </div>
                             </div>
                         </article>
@@ -249,12 +249,14 @@
                 </div>
 
                 <!-- Botón Derecho -->
-                <button id="ds-next" class="ds-arrow side-arrow" aria-label="Next">&rarr;</button>
+                <button id="ds-next" class="ds-arrow side-arrow" aria-label="Siguiente">&rarr;</button>
             </div>
-        </section>        <!-- 5. Contact -->
+        </section>        
+        
+        <!-- 5. Contact -->
         <section id="Contact" class="contact-section-dark">
             <div class="contact-header">
-                <h2>Contact Me</h2>
+                <h2>Contáctame</h2>
             </div>
             
             <div class="contact-boxes">
@@ -271,7 +273,7 @@
                 </a>
                  <a href="https://www.linkedin.com/in/leo-moyota-martinez-40b412340/" target="_blank" rel="noopener noreferrer" class="contact-box">
                     <img src="img/linkedin.png" alt="LinkedIn icon" class="contact-icon-linkedin">
-                    <span>LinkedIn Profile</span>
+                    <span>Perfil de LinkedIn</span>
                 </a>
 
                 <!-- Box 3: Location -->
@@ -299,14 +301,14 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Leo Moyota Martinez. All rights reserved.</p>
+            <p>&copy; 2026 Leo Moyota Martinez. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Botón para volver arriba -->
-    <button id="btn-top" class="btn-top" aria-label="Back to top">↑</button>
+    <button id="btn-top" class="btn-top" aria-label="Volver arriba">↑</button>
 
     <!-- Conexión del script al final del body -->
     <script src="js/script.js" defer></script>
 </body>
-</html> 
+</html>
