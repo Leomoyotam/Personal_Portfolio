@@ -23,7 +23,25 @@
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#Projects">Proyectos</a></li>
                 <li><a href="#Contact">Contacto</a></li>
-                <li><button id="theme-toggle">Tema</button></li>
+                <!-- Nuevo Interruptor Animado de Tema -->
+                <li>
+                    <label for="theme-toggle-checkbox" class="theme">
+                        <span class="theme__toggle-wrap">
+                            <input id="theme-toggle-checkbox" class="theme__toggle" type="checkbox" role="switch" name="theme">
+                            <span class="theme__icon">
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                                <span class="theme__icon-part"></span>
+                            </span>
+                        </span>
+                    </label>
+                </li>
             </ul>
         </nav>
     </header>
@@ -39,7 +57,6 @@
                 <p>Especializado en desarrollo backend con Python/Django, integración de modelos de Machine Learning y desarrollo de aplicaciones web mantenibles y de alto rendimiento.</p>                
                 <div class="hero-buttons">
                     <a href="#Projects" class="btn-primary">Ver mis proyectos</a>
-                    <!-- Mantenemos target="_blank" solo en enlaces externos -->
                     <a href="https://wa.me/+593996762565" target="_blank" rel="noopener noreferrer" class="btn-secondary">Contáctame</a>
                 </div>
             </div>
@@ -81,7 +98,6 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="skill-box">
-                    <!-- Agrupador para mantener HTML y CSS horizontales -->
                     <div class="skill-icons-group">
                         <img src="img/html.png" alt="HTML logo" class="skill-icon">
                         <img src="img/css.png" alt="CSS logo" class="skill-icon">
@@ -115,14 +131,12 @@
                 <button class="btn-filter active" data-filter="all">Todos</button>
                 <button class="btn-filter" data-filter="web">Web</button>
                 <button class="btn-filter" data-filter="ml">Aprendizaje Automático</button>
-                <button class="btn-filter" data-filter="game">Juegos</button>
             </div>
             <div class="projects-grid">
                 <!-- PROJECT 1: GUIOS PRO-MAX -->
                 <article class="project-card" data-category="web">
                     <figure class="project-image-container">
                         <img src="img/guioss.png" alt="Groq AI logo" class="project-icon">
-                        <!-- img de portada de GUIOS PRO-MAX -->
                     </figure>
                     <div class="project-content">
                         <h3>GUIOS PRO-MAX</h3>
@@ -140,7 +154,7 @@
                     </div>
                 </article>
 
-                <!-- PROJECT 2: Placeholder -->
+                <!-- PROJECT 2: Sistema de Inventario -->
                 <article class="project-card" data-category="web">
                     <figure class="project-image-container" style="background-color: var(--color-surface); display: flex; align-items: center; justify-content: center; height: 210px;">
                         <img src="img/sistema_inventario.png" alt="Sistema de inventario" class="project-icon">
@@ -161,8 +175,8 @@
                     </div>
                 </article>
 
-                <!-- PROJECT 3: Placeholder -->
-                <article class="project-card" data-category="web">
+                <!-- PROJECT 3: Clasificador de incidencias (Corrección en data-category) -->
+                <article class="project-card" data-category="ml">
                     <figure class="project-image-container" style="background-color: var(--color-surface); display: flex; align-items: center; justify-content: center; height: 210px;">
                         <img src="img/clasificador.png" alt="Clasificador de incidencias" class="project-icon">
                     </figure>
@@ -187,12 +201,10 @@
             </div>
             
             <div class="ds-carousel-wrapper">
-                <!-- Botón Izquierdo -->
                 <button id="ds-prev" class="ds-arrow side-arrow" aria-label="Anterior">&larr;</button>
                 
                 <div class="ds-carousel-container">
                     <div class="ds-track" id="ds-track">
-                        <!-- Slide 1: Colores -->
                         <article class="ds-slide">
                             <h3>Colores</h3>
                             <div class="ds-color-grid">
@@ -204,7 +216,6 @@
                             </div>
                         </article>
 
-                        <!-- Slide 2: Tipografía -->
                         <article class="ds-slide">
                             <h3>Tipografía</h3>
                             <div class="ds-typo">
@@ -217,7 +228,6 @@
                             </div>
                         </article>
 
-                        <!-- Slide 3: Espaciado -->
                         <article class="ds-slide">
                             <h3>Escala de Espaciado</h3>
                             <div class="ds-spacing">
@@ -228,7 +238,6 @@
                             </div>
                         </article>
 
-                        <!-- Slide 4: Componentes Reutilizables -->
                         <article class="ds-slide">
                             <h3>Componentes</h3>
                             <div class="ds-components">
@@ -248,7 +257,6 @@
                     </div>
                 </div>
 
-                <!-- Botón Derecho -->
                 <button id="ds-next" class="ds-arrow side-arrow" aria-label="Siguiente">&rarr;</button>
             </div>
         </section>        
@@ -260,13 +268,11 @@
             </div>
             
             <div class="contact-boxes">
-                <!-- Box 1: Email (Ejemplo) -->
                 <a href="mailto:lmoyotam@unemi.edu.ec" class="contact-box">
                    <img src="img/correo.webp" alt="Email icon" class="contact-icon">
                     <span>lmoyotam@unemi.edu.ec</span>
                 </a>
 
-                <!-- Box 2: WhatsApp -->
                 <a href="https://wa.me/+593996762565" target="_blank" rel="noopener noreferrer" class="contact-box">
                     <img src="img/whatsapp.webp" alt="WhatsApp icon" class="contact-icon">
                     <span>+593 99 676 2565</span>
@@ -276,7 +282,6 @@
                     <span>Perfil de LinkedIn</span>
                 </a>
 
-                <!-- Box 3: Location -->
                 <div class="contact-box">
                    <img src="img/location.png" alt="Location icon" class="contact-icon">
                     <span>Milagro, Ecuador</span>
@@ -286,12 +291,10 @@
             <div class="contact-footer">
                 <div class="social-icons">
                     <a href="https://github.com/Leomoyotam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <!-- img/svg icono github -->
                         <span>GitHub</span>
                     </a>
 
                     <a href="https://www.linkedin.com/in/leo-moyota-martinez-40b412340/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <!-- img/svg icono linkedin -->
                         <span>LinkedIn</span>
                     </a>
                 </div>
