@@ -61,7 +61,7 @@ El proyecto es estático y no requiere configuración de servidores, compiladore
 
 ## Vistas del Proyecto
 
-![SobreMí](img/sobremi.pngobremi.png)
+![SobreMí](img/sobremi.png)
 ![Skills](img/skills.png)
 ![Proyectosdestacados](img/proyectodestacado.png)
 ![Componentes_contacto](img/Diseñoportfolio.png)
