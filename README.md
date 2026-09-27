@@ -4,16 +4,16 @@ Bienvenido al repositorio de mi portafolio web personal. Como estudiante de Inge
 
 Puedes explorar mi trabajo enfocado en arquitectura backend (Python/Django), Machine Learning y desarrollo de videojuegos.
 
-## ✨ Características Destacadas
+##  Características Destacadas
 
 Este proyecto fue desarrollado poniendo especial atención a los detalles técnicos y la experiencia de usuario:
 
-* 🌗 Modo Oscuro Interactivo: Implementación nativa con variables CSS y un interruptor animado (Sol/Luna) renderizado y calculado puramente con CSS. La preferencia del usuario se guarda localmente mediante localStorage.
-* 🗂️ Filtrado de Proyectos Dinámico: Motor de búsqueda por categorías (Web, ML, Juegos) construido con Vanilla JavaScript, garantizando transiciones de estado fluidas y reflows controlados en el DOM.
-* 🎨 Sistema de Diseño Integrado: Documentación viva dentro de la misma página. Incluye un carrusel interactivo que expone la paleta de colores, la escala tipográfica y los componentes reutilizables (UI Kit).
-* 📱 Arquitectura CSS Escalable: Uso extensivo de CSS Custom Properties (variables), Flexbox y Grid para un diseño 100% responsivo y semántico.
+*  Modo Oscuro Interactivo: Implementación nativa con variables CSS y un interruptor animado (Sol/Luna) renderizado y calculado puramente con CSS. La preferencia del usuario se guarda localmente mediante localStorage.
+*  Filtrado de Proyectos Dinámico: Motor de búsqueda por categorías (Web, ML, Juegos) construido con Vanilla JavaScript, garantizando transiciones de estado fluidas y reflows controlados en el DOM.
+*  Sistema de Diseño Integrado: Documentación viva dentro de la misma página. Incluye un carrusel interactivo que expone la paleta de colores, la escala tipográfica y los componentes reutilizables (UI Kit).
+*  Arquitectura CSS Escalable: Uso extensivo de CSS Custom Properties (variables), Flexbox y Grid para un diseño 100% responsivo y semántico.
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 Estructura del Portafolio:
 * HTML5 (Semántico y accesible)
@@ -25,8 +25,9 @@ Tecnologías aplicadas en mis proyectos (Documentados aquí):
 * Data & IA: Scikit-learn (Isolation Forest/Random Forest), Groq AI API
 * Game Dev: Unity, C#, LibreSprite
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
+```text
 Portafolio/
 ├── index.html
 ├── README.md
@@ -43,8 +44,8 @@ Portafolio/
     ├── correo.webp
     ├── whatsapp.webp
     └── [iconos de habilidades, redes sociales y capturas]
-
-## ⚙️ Despliegue y Uso Local
+```
+##  Despliegue y Uso Local
 
 El proyecto es estático y no requiere configuración de servidores, compiladores de assets ni dependencias de Node.js.
 
@@ -58,21 +59,21 @@ El proyecto es estático y no requiere configuración de servidores, compiladore
    * Simplemente abre el archivo index.html en tu navegador de preferencia.
    * Alternativamente, si usas VS Code, puedes utilizar la extensión Live Server para tener recarga en vivo durante el desarrollo.
 
-## 📸 Vistas del Proyecto
+## Vistas del Proyecto
 
-![SobreMí](img\sobremi.png)
-![Skills](img\skills.png)
-![Proyectosdestacados](img\proyectodestacado.png)
-![Componentes_contacto](img\Diseñoportfolio.png)
+![SobreMí](img/sobremi.pngobremi.png)
+![Skills](img/skills.png)
+![Proyectosdestacados](img/proyectodestacado.png)
+![Componentes_contacto](img/Diseñoportfolio.png)
 
-## 📫 Conecta conmigo
+##  Conecta conmigo
 
 Actualmente resido en Milagro, Guayas, y estoy abierto a colaborar en proyectos innovadores de software, automatización o desarrollo de videojuegos.
 
-* ✉️ Email Institucional: lmoyotam@unemi.edu.ec
-* 💬 WhatsApp: https://wa.me/+593996762565
-* 💼 LinkedIn: https://www.linkedin.com/in/leo-moyota-martinez-40b412340/
-* 🐙 GitHub: https://github.com/Leomoyotam
+*  Email Institucional: lmoyotam@unemi.edu.ec
+*  WhatsApp: https://wa.me/+593996762565
+*  LinkedIn: https://www.linkedin.com/in/leo-moyota-martinez-40b412340/
+*  GitHub: https://github.com/Leomoyotam
 
 ---
 Diseñado y desarrollado por Leo Moyota Martinez © 2026
