@@ -10,24 +10,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. Persistencia de preferencias: Modo Claro / Oscuro
-    const themeToggle = document.getElementById('theme-toggle');
+ // 2. Persistencia de preferencias: Modo Claro / Oscuro con Checkbox
+    const themeCheckbox = document.getElementById('theme-toggle-checkbox');
     const root = document.documentElement;
 
-    if (themeToggle) {
-        // Revisar LocalStorage
-        const currentTheme = localStorage.getItem('theme') || 'light';
+    if (themeCheckbox) {
+        // Revisamos LocalStorage, por defecto usamos oscuro
+        const currentTheme = localStorage.getItem('theme') || 'dark';
         root.setAttribute('data-theme', currentTheme);
+        
+        // Sincronizamos la posición del interruptor según el tema guardado
+        // Si el tema es oscuro, el checkbox debe estar marcado (checked = true)
+        themeCheckbox.checked = currentTheme === 'dark';
 
-        themeToggle.addEventListener('click', () => {
-            let theme = root.getAttribute('data-theme');
-            let newTheme = theme === 'light' ? 'dark' : 'light';
+        // Escuchamos los cambios en el interruptor animado
+        themeCheckbox.addEventListener('change', (e) => {
+            // Si está activado (checked) es oscuro, de lo contrario claro
+            let newTheme = e.target.checked ? 'dark' : 'light';
             
             root.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme); // Guarda en localStorage
+            localStorage.setItem('theme', newTheme); // Guardamos la preferencia
         });
     }
-
     // 3. Botón para volver al inicio (Aparece al hacer scroll)
     const btnTop = document.getElementById('btn-top');
 
@@ -107,24 +111,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 5. Filtro de Proyectos
+// 5. Filtro de Proyectos
     const filterButtons = document.querySelectorAll('.btn-filter');
     const projectCards = document.querySelectorAll('.project-card');
 
     if (filterButtons.length > 0 && projectCards.length > 0) {
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // Actualizar estado visual de los botones
+                // 1. Actualizar estado visual de los botones
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
 
                 const filterValue = button.getAttribute('data-filter');
 
-                // Mostrar u ocultar tarjetas según la categoría
+                // 2. Mostrar u ocultar tarjetas
                 projectCards.forEach(card => {
                     if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
                         card.style.display = 'block'; 
-                        // Animación suave de reaparición
+                        
+                        // 3. Forzar el reinicio de la animación para que reaparezcan suavemente
+                        card.style.animation = 'none';
+                        void card.offsetWidth; // Dispara un "reflow" en el navegador
                         card.style.animation = 'fadeIn 0.5s ease forwards';
                     } else {
                         card.style.display = 'none';
